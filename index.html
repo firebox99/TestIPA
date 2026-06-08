@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>iMorker 企業級行動入口安裝</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #5AAF10;
+            --primary-hover: #4e980c;
+            --bg: #F4F6F8;
+            --card-bg: #ffffff;
+            --text: #1A1F2B;
+            --text-sub: #5A6475;
+            --border: #DDE2E9;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 24px 16px;
+        }
+
+        .container {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 40px 24px;
+            max-width: 440px;
+            width: 100%;
+            box-shadow: 0 12px 32px rgba(26, 31, 43, 0.05);
+            text-align: center;
+        }
+
+        .logo-container {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 24px;
+            background: linear-gradient(135deg, #75C830, #5AAF10);
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 8px 20px rgba(90, 175, 16, 0.25);
+        }
+
+        .logo-icon {
+            color: white;
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: var(--text-sub);
+            margin-bottom: 32px;
+            line-height: 1.5;
+        }
+
+        .btn-install {
+            display: inline-block;
+            width: 100%;
+            padding: 16px;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 14px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 12px rgba(90, 175, 16, 0.2);
+        }
+
+        .btn-install:active {
+            transform: scale(0.98);
+            background-color: var(--primary-hover);
+        }
+
+        .divider {
+            height: 1px;
+            background-color: var(--border);
+            margin: 32px 0 24px;
+        }
+
+        .instructions {
+            text-align: left;
+        }
+
+        .instructions h3 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--text);
+        }
+
+        .step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            font-size: 13px;
+            color: var(--text-sub);
+            line-height: 1.6;
+        }
+
+        .step-num {
+            background-color: var(--bg);
+            border: 1px solid var(--border);
+            color: var(--text);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 11px;
+            font-weight: 600;
+            margin-right: 10px;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .step-text strong {
+            color: var(--text);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <span class="logo-icon">M</span>
+        </div>
+        <h1>iMorker 企業版安裝</h1>
+        <p class="subtitle">企業級安全行動入口網<br>支援 iOS 覆蓋升級，免卸載保留本地數據</p>
+        
+        <a class="btn-install" href="itms-services://?action=download-manifest&url=https://firebox99.github.io/TestIPA/manifest.plist">
+            立即安裝 iMorker
+        </a>
+        
+        <div class="divider"></div>
+        
+        <div class="instructions">
+            <h3>iOS 信任憑證步驟說明</h3>
+            <div class="step">
+                <div class="step-num">1</div>
+                <div class="step-text">點擊上方按鈕開始安裝，等待桌面下載完成。</div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div class="step-text">開啟手機系統 <strong>「設定」</strong> &gt; <strong>「一般」</strong> &gt; <strong>「VPN 與裝置管理」</strong>。</div>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div class="step-text">在「企業級 App」分組下，點選信任對應的企業開發者憑證。</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
